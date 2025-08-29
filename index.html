@@ -3,123 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laennec - Продажа</title>
+  <title>LAENNEC – Это ваше ЗДОРОВЬЕ КРАСОТА И МОЛОДОСТЬ!</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
-      background-color: #fff7f0;
+      font-family: Arial, sans-serif;
+      height: 100%;
       color: #333;
     }
-    header {
-      background-color: #f47c20;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero img {
-      max-width: 400px;
+    .bg {
+      background: url("Лаеннек.jpg") no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(6px) brightness(0.9);
+      height: 100%;
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0; left: 0;
+      z-index: -1;
     }
-    .hero p {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #444;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #25D366; /* зеленый WhatsApp */
+    header {
+      background-color: #f9a45d; /* светло-оранжевый */
       color: #fff;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      text-align: center;
+      padding: 20px;
     }
-    .btn:hover {
-      background: #1ebe5d;
+    header h1 { margin: 0; }
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
     }
     .product {
-      background: #fff;
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
       border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.2s;
     }
+    .product:hover { transform: translateY(-5px); }
     .product img {
       max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      border-radius: 10px;
     }
-    .product h3 {
-      font-size: 18px;
-      margin: 10px 0 5px;
-      color: #f47c20;
+    .product h3 { margin: 10px 0; font-size: 18px; }
+    .product a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #25d366; /* зелёная (WhatsApp) */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
     }
-    .product p {
-      font-size: 14px;
-      color: #555;
+    .product a:hover {
+      background: #1ebe5d;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background: #f47c20;
+      background: #f9a45d;
       color: #fff;
-      margin-top: 40px;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <div class="bg"></div>
+
   <header>
-    <h1>LAENNEC - Ваша Молодость Красота и Здоровье!</h1>
+    <h1>LAENNEC – Это ВАШЕ ЗДОРОВЬЕ КРАСОТА И МОЛОДОСТЬ!</h1>
   </header>
 
-  <section class="hero">
-    <img src="https://images.openai.com/thumbnails/url/_C_a2Xicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6MdLGM8MuPt8jUdTHMSA-uDM0wN842cQowK_UwNAmuMM81N0gqNTYtC8quCC0uDHPK13Uu141Pd9RVKwYAnSUoAA" alt="Упаковка Laennec">
-    <p>Только оригинальная продукция из Японии. Прямые Оптовые поставки.</p>
-    <a href="https://wa.me/77000000000" class="btn">WhatsApp</a>
-  </section>
+  <div class="container">
+    <h2 style="text-align:center;">Наши товары</h2>
+    <div class="products">
 
-  <section class="products">
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 1"><h3>Товар 1</h3><p>Описание товара 1</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 2"><h3>Товар 2</h3><p>Описание товара 2</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 3"><h3>Товар 3</h3><p>Описание товара 3</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 4"><h3>Товар 4</h3><p>Описание товара 4</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 5"><h3>Товар 5</h3><p>Описание товара 5</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 6"><h3>Товар 6</h3><p>Описание товара 6</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 7"><h3>Товар 7</h3><p>Описание товара 7</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 8"><h3>Товар 8</h3><p>Описание товара 8</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 9"><h3>Товар 9</h3><p>Описание товара 9</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 10"><h3>Товар 10</h3><p>Описание товара 10</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 11"><h3>Товар 11</h3><p>Описание товара 11</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 12"><h3>Товар 12</h3><p>Описание товара 12</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 13"><h3>Товар 13</h3><p>Описание товара 13</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 14"><h3>Товар 14</h3><p>Описание товара 14</p></div>
-    <div class="product"><img src="https://via.placeholder.com/200x150" alt="Товар 15"><h3>Товар 15</h3><p>Описание товара 15</p></div>
-  </section>
+      <div class="product">
+        <img src="Laennec.jpeg" alt="Laennec">
+        <h3>Laennec</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="Гаммалон.jpeg" alt="Гаммалон">
+        <h3>Гаммалон</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="Лаеннек.jpeg" alt="Лаеннек">
+        <h3>Лаеннек</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecForte.jpeg" alt="Laennec Forte">
+        <h3>Laennec Forte</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="Laennec5.jpeg" alt="Laennec 5 ампул">
+        <h3>Laennec 5 ампул</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecProcedure.jpeg" alt="Laennec для процедур">
+        <h3>Laennec для процедур</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecBeauty.jpeg" alt="Laennec Beauty Set">
+        <h3>Laennec Beauty Set</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecHealth.jpeg" alt="Laennec Health Pack">
+        <h3>Laennec Health Pack</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecEnergy.jpeg" alt="Laennec Energy">
+        <h3>Laennec Energy</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecPro.jpeg" alt="Laennec Pro">
+        <h3>Laennec Pro</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecLight.jpeg" alt="Laennec Light">
+        <h3>Laennec Light</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecIntensive.jpeg" alt="Laennec Intensive">
+        <h3>Laennec Intensive</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+      <div class="product">
+        <img src="LaennecOriginal.jpeg" alt="Laennec Original">
+        <h3>Laennec Original</h3>
+        <a href="product-template.html">Подробнее</a>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
-    <p>© 2025 Laennec Казахстан. Все права защищены.</p>
+    © 2025 Laennec Казахстан. Все права защищены.
   </footer>
 </body>
 </html>
